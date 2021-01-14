@@ -1,0 +1,37 @@
+<section class="navigation-header">
+  <app-navigation-header></app-navigation-header>
+</section>
+
+<section class="main-body p-t-20">
+  <mat-card class="example-card">
+    <mat-card-header class="header">
+      <mat-card-title>Books</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <mat-list role="list" *ngFor="let book of bookList">
+        <mat-list-item role="listitem">{{book.title}}</mat-list-item>
+
+      </mat-list>
+
+    </mat-card-content>
+  </mat-card>
+
+  <!-- <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+    <mat-icon>bookmark</mat-icon>
+  </button>
+   -->
+  <mat-card class="example-card p-t-20">
+    <mat-card-header class="header">
+      <mat-card-title>Readers</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <mat-list role="list" *ngFor="let reader of readerList">
+        <mat-list-item role="listitem">{{reader.name}}</mat-list-item>
+      </mat-list>
+
+    </mat-card-content>
+  </mat-card>
+
+</section>
